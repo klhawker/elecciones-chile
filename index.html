@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Elecciones Chile 2025/26</title>
+<style>
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --primary: #004080;
+  --card-bg: #fff;
+}
+body { font-family: "Segoe UI", Arial, sans-serif; margin:0; background: var(--bg); color: var(--text); }
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 20px 40px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section { padding: 20px 40px; }
+h2 { color: var(--primary); margin-top:0; }
+ul { list-style:none; padding:0; display:flex; flex-wrap: wrap; }
+li { background: var(--card-bg); margin:10px; padding:15px 20px; border-radius:5px; box-shadow:0 2px 4px rgba(0,0,0,0.1); transition: background 0.3s; }
+li:hover { background:#cce0ff; }
+li a { text-decoration:none; color:var(--primary); font-weight:bold; }
+footer { font-size:0.9em; color:#666; margin:40px; text-align:center; }
+.dark-mode {
+  --bg: #222;
+  --text: #ddd;
+  --primary: #66aaff;
+  --card-bg: #333;
+}
+button { background: var(--primary); color:#fff; border:none; padding:8px 12px; border-radius:4px; cursor:pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1 style="margin:0">Elecciones Presidenciales Chile 2025/26</h1>
+  <button id="theme-toggle">Modo oscuro</button>
+</header>
+<section>
+<p>Este sitio web reúne información pública sobre los principales precandidatos. Se recomienda verificar cada dato en sus fuentes originales.</p>
+</section>
+<section>
+<h2>Candidatos</h2>
+<ul>
+  <li><a href="evelyn-matthei.html">Evelyn Matthei</a></li>
+  <li><a href="jose-antonio-kast.html">José Antonio Kast</a></li>
+  <li><a href="carolina-toha.html">Carolina Tohá</a></li>
+  <li><a href="johannes-kaiser.html">Johannes Kaiser</a></li>
+  <li><a href="gonzalo-winter.html">Gonzalo Winter</a></li>
+  <li><a href="jeannette-jara.html">Jeannette Jara</a></li>
+</ul>
+</section>
+<section>
+<h2>Encuestas y datos</h2>
+<p>Según la <a href="https://www.cadem.cl/">Encuesta Plaza Pública Cadem</a> de 2024, Evelyn Matthei y José Antonio Kast lideran las preferencias presidenciales. La <a href="https://www.cepchile.cl/encuesta_nacional_de_opinion_publica/">Encuesta CEP</a> de 2023 mostró tendencias similares.</p>
+</section>
+<footer>
+<p>La información se basa en fuentes públicas disponibles hasta 2024 y puede variar con el tiempo. Revise siempre las referencias originales.</p>
+</footer>
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    this.textContent = document.body.classList.contains('dark-mode') ? 'Modo claro' : 'Modo oscuro';
+  });
+</script>
+</body>
+</html>
